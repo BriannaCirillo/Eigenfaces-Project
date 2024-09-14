@@ -23,7 +23,7 @@ Eigenfaces provide a way to represent a high-dimensional facial image space in a
    - **PCA**: Principal Component Analysis reduces the number of variables while retaining essential information. The top eigenvectors are used to create Eigenfaces, which allow for comparison and recognition of facial features.
 
 3. **Computing Eigenfaces**:
-   - Obtain a set of facial images, ensuring they are the same size and centered.
+   - **Data**: The Yale Face Database was used, specifically the `allfaces.mat` file containing facial images of 38 participants under varying lighting conditions.
    - Compute the mean face and subtract it from all images to normalize the dataset.
    - Perform SVD on the dataset to derive the principal components (eigenvectors).
    - Use the top eigenvectors to form the Eigenfaces, representing key facial features.
